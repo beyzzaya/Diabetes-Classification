@@ -10,4 +10,3 @@ built on the classic *Pima Indians Diabetes* dataset (`diabetes.csv`).
 - Builds a simple dense network (`[32-64-128-256-512] → sigmoid`).  
 - Trains with the **tf.data** input pipeline for efficiency.  
 - Achieves **≈ 0.78 validation accuracy** after 100 epochs (Task 6 result).  
-- Provides comments (in Turkish) explaining each step.
