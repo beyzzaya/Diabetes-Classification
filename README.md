@@ -1,14 +1,13 @@
 # Diabetes-Classification
 
-This repo contains **` Diabetes-Classification.ipynb`**, a Jupyter Notebook that predicts
-whether a patient has diabetes using a neural network written **only with
-NumPy**.
+This repository contains **`Diabetes-Classification.ipynb`**, a step-by-step Jupyter Notebook that
+predicts whether a patient has diabetes using a **Keras Sequential** model
+built on the classic *Pima Indians Diabetes* dataset (`diabetes.csv`).
 
-### What the notebook does
-1. **Load data** · reads `diabetes.csv` (Pima Indians Diabetes dataset).  
-2. **Pre-process** · standard-scales features, splits train/validation (80 / 20).  
-3. **Build network** · 1 hidden layer (2 neurons) + sigmoid output, coded
-   from scratch (forward & back-prop).  
-4. **Train** · up to 1000 iterations with mini-report every 100 steps.  
-5. **Evaluate** · best run ≈ **0.71 validation accuracy** and **0.81 AUC**;  
-   plots training / validation loss curves.
+### Key points
+- Reads the dataset, scales features with **MinMaxScaler**.  
+- Splits data 80 % / 20 % for train / validation.  
+- Builds a simple dense network (`[32-64-128-256-512] → sigmoid`).  
+- Trains with the **tf.data** input pipeline for efficiency.  
+- Achieves **≈ 0.78 validation accuracy** after 100 epochs (Task 6 result).  
+- Provides comments (in Turkish) explaining each step.
